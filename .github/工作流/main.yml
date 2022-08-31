@@ -16,10 +16,10 @@ jobs:
   # 这个jobs中的一个任务，名字叫build(随便怎么取)
   build:
     # 用来指定这个任务在什么操作系统上跑(服务器是GitHub免费提供的)
-    runs-on: Windows
+    runs-on: windows-latest
     steps:
     # 首先copy git仓库到虚拟机上
-      - name: Checkout
+      - name: Susan
         uses: actions/checkout@v2
         # 安装初始化python
       - name: 'Set up Python'
