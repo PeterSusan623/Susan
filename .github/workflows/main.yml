@@ -28,7 +28,10 @@ jobs:
           python-version: 3.7
         # 安装脚本所需的依赖
       - name: 'Install requests'
-        run: pip install requests json random time
+        run: |
+          python3 - pip install --upgrade pip
+          pip install requests json random time
+          
         # 运行脚本
       - name: 'Working'
        # env:	#添加环境变量
