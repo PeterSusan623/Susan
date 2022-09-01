@@ -26,7 +26,7 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install requests json
+        pip install -i https://pypi.tuna.tsinghua.edu.cn/requests json
         #if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: python ./main.py 
