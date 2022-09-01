@@ -25,7 +25,7 @@ jobs:
         python-version: "3.7"
     - name: Install dependencies
       run: |
-        python3 -m pip install --upgrade pip -i https://mirrors.zju.edu.cn/
+        python3 -m pip install --upgrade pip -i http://mirrors.ustc.edu.cn/
         pip install flake8 pytest json requests random time
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
