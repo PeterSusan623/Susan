@@ -26,10 +26,10 @@ jobs:
     - name: Install dependencies
       run: |
         python3 -m pip install --upgrade pip
-        pip install requests -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
-        pip install json -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
-        pip install random -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
-        pip install time -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+        pip3 install requests -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com
+        pip3 install json -i http://pypi.douban.com/simple/
+        pip3 install random -i http://pypi.douban.com/simple/
+        pip3 install time -i http://pypi.douban.com/simple/
         #if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Test with pytest
       run: python ./main.py 
