@@ -54,7 +54,10 @@ from send_message import SendMessage
 import time
 
 a = 0
-TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4','o-kLm6OCrDQjWaWcDwf32-JXDal0']
+TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
+          'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
+          'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖  03
+          'o-kLm6OCrDQjWaWcDwf32-JXDal0',]    #测试
 
 
 class Main(object):
@@ -133,21 +136,24 @@ class Main(object):
                '你得先看中自己，否则别人会当你一钱不值。',
                '金钱总是万能的，好工具总是属于钱包最厚的人。',
                '耐心不是一种品德，而是唯一的品德。']
-        print(len(qgy))
+        # print(len(qgy))
         sm = SendMessage(touser=TOUSER[a])
-        print(time.strftime('%H-%M-%S',time.localtime(time.time())))
+        # print(time.strftime('%H-%M-%S',time.localtime(time.time())))
         # 获取接口返回数据
         api = 'http://t.weather.itboy.net/api/weather/city/'  # API地址，必须配合城市代码使用
-        city_code = '101270101'  # 进入https://where.heweather.com/index.html查询你的城市代码
+        city_code = '101270101'  #成都
+            # '101270101'  # 进入https://where.heweather.com/index.html查询你的城市代码
+        if a == 2:    #佟颖所在的城市
+            city_code = '101090501'   #唐山
         tqurl = api + city_code
         response = requests.get(tqurl)
         d = response.json()  # 将数据以json形式返回，这个d就是返回的json数据
         n = random.randint(0, len(qgy)-1)
-        json_data = {"city": d["cityInfo"]["parent"] + '省' + d["cityInfo"]["city"], #省市
+        json_data = {"city": d["cityInfo"]["parent"] + '省' + d["cityInfo"]["city"], #+ d["cityInfo"]["county"],#省市
                      "data": d["data"]["forecast"][0]["ymd"],  #日期
                      "time": time.strftime('%H:%M:%S',time.localtime(time.time())),  #当前时间
-                     # "time": d["time"][11:19],  更新时间
-                     "week": d["data"]["forecast"][0]["week"],  #星期
+                     "updata_time": d["time"],                         #更新时间
+                     "week": d["data"]["forecast"][0]["week"],         #星期
                      "weather_type": d["data"]["forecast"][0]["type"], #天气
                      "wendu_high": d["data"]["forecast"][0]["high"],   #最高温度
                      "wendu_low": d["data"]["forecast"][0]["low"],     #最低温度
@@ -161,8 +167,6 @@ class Main(object):
                      "tips": d["data"]["forecast"][0]["notice"],       #温馨提示
                      "qgy": qgy[n]}                                    #胶泥坐人
         # 发送消息
-        print(2)
-        print(a)
         sm.send_message(json_data=json_data)
 
 
@@ -172,8 +176,7 @@ if __name__ == '__main__':
     main = Main()
     main.main()
     # access_token.a = access_token.a + 1
-    if TOUSER[a] != False:
-        a = a + 1
-        print(TOUSER[a])
+    for a in range(1,len(TOUSER)):
+        # print(TOUSER[a])
         main = Main()
         main.main()

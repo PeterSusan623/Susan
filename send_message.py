@@ -15,26 +15,30 @@ import send_message
 from access_token import AccessToken
 
 
-TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4','o-kLm6OCrDQjWaWcDwf32-JXDal0']
+TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
+          'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
+          'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖  03
+          'o-kLm6OCrDQjWaWcDwf32-JXDal0',]    #测试
 
 a = 0
 
 class SendMessage(object):
-    print("a=",a)
+    # print("a=",a)
     # 消息接收者
-    TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4','o-kLm6OCrDQjWaWcDwf32-JXDal0']
+    TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
+              'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
+              'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖  03
+              'o-kLm6OCrDQjWaWcDwf32-JXDal0', ]   #测试
     # 消息模板id
-    TEMPLATE_ID = 'MEc-tdFxoohrPxpqh5nQ7OvtOolzWIrM5dCu8JTSez4'
+    TEMPLATE_ID = 'i--KZsfRnhuLqKclGnAJoSyfrFlPwxAa1wyksPBAwF0'
     # 点击跳转链接（可无）
     CLICK_URL = ' '
     len(TOUSER)
     # for n in range (0,len(TOUSER)):
-    print("1")
-    print(TOUSER[send_message.a])
+    # print(TOUSER[send_message.a])
 
     def __init__(self, touser=TOUSER[send_message.a], template_id=TEMPLATE_ID, click_url=CLICK_URL) -> None:
         print("touser=",touser)
-        print("11")
         """
         构造函数
         :param touser: o-kLm6OCrDQjWaWcDwf32-JXDal0
@@ -48,8 +52,6 @@ class SendMessage(object):
 
 
     def get_send_data(self, json_data) -> object:
-        print("4")
-        print(send_message.a)
         """
         获取发送消息data
         :param json_data: json数据对应模板
@@ -74,6 +76,10 @@ class SendMessage(object):
                 "time": {
                     "value": json_data["time"],
                     "color": "#FF00FF"
+                },
+                "updata_time": {
+                    "value": json_data["updata_time"],
+                    "color": "#8B008B"
                 },
                 "week": {
                     "value": json_data["week"],
@@ -138,8 +144,6 @@ class SendMessage(object):
         """
         # 模板消息请求地址
         url = f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={self.access_token}"
-        print(3)
-        print(send_message.a)
         data = json.dumps(self.get_send_data(json_data))
         resp = requests.post(url, data=data)
         result = resp.json()
