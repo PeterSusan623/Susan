@@ -15,7 +15,7 @@ permissions:
 jobs:
   build:
 
-    runs-on: windows 10
+    runs-on: windows-2019
 
     steps:
     - uses: actions/checkout@v3
