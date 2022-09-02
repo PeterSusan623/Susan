@@ -63,6 +63,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',     #男神     4
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
+          'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
           'o-kLm6OCrDQjWaWcDwf32-JXDal0']     #测试
 
 
