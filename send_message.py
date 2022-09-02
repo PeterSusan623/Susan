@@ -22,11 +22,12 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',     #男神     4
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
+          'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
           'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
           'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
+          'o-kLm6GP1jz6rdnz5uDXpxIQD6yo',     #李雨珂
           'o-kLm6OCrDQjWaWcDwf32-JXDal0']     #测试
-
 
 a = 0
 
@@ -40,9 +41,11 @@ class SendMessage(object):
               'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',     #男神     4
               'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
               'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
+              'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
               'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
               'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
               'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
+              'o-kLm6GP1jz6rdnz5uDXpxIQD6yo',     #李雨珂
               'o-kLm6OCrDQjWaWcDwf32-JXDal0']     #测试
 
     # 消息模板id
