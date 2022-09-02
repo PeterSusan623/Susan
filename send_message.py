@@ -27,6 +27,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
           'o-kLm6GP1jz6rdnz5uDXpxIQD6yo',     #李雨珂
+          'o-kLm6CmTKNl0otcTCm_AMM2ok_c',     #卓桑
           'o-kLm6OCrDQjWaWcDwf32-JXDal0']     #测试
 
 a = 0
@@ -46,6 +47,7 @@ class SendMessage(object):
               'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
               'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
               'o-kLm6GP1jz6rdnz5uDXpxIQD6yo',     #李雨珂
+              'o-kLm6CmTKNl0otcTCm_AMM2ok_c',     #卓桑
               'o-kLm6OCrDQjWaWcDwf32-JXDal0']     #测试
 
     # 消息模板id
