@@ -162,7 +162,7 @@ class Main(object):
         n = random.randint(0, len(qgy)-1)
         json_data = {"city": d["cityInfo"]["parent"] + '省' + d["cityInfo"]["city"], #+ d["cityInfo"]["county"],#省市
                      "data": d["data"]["forecast"][0]["ymd"],  #日期
-                     "time": time.strftime('%H:%M:%S',time.localtime(time.time())),  #当前时间
+                     "time": time.strftime("%X", time.localtime()),  #当前时间
                      "updata_time": d["time"],                         #更新时间
                      "week": d["data"]["forecast"][0]["week"],         #星期
                      "weather_type": d["data"]["forecast"][0]["type"], #天气
