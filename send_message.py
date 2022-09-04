@@ -19,7 +19,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
           'o-kLm6AW-Q9V9wHFiZjBmH2E0koM',     #安儿子
           'o-kLm6NW13Og_V3fxfCqFWlEQDOo',     #锦城小黄  3
-          'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',     #男神     4
+          'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平     
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
           'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
@@ -39,7 +39,7 @@ class SendMessage(object):
               'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
               'o-kLm6AW-Q9V9wHFiZjBmH2E0koM',     #安儿子
               'o-kLm6NW13Og_V3fxfCqFWlEQDOo',     #锦城小黄  3
-              'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',     #男神     4
+              'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平     
               'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
               'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
               'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
