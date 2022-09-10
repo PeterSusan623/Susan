@@ -23,6 +23,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
           'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
+          'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
           'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
           'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
@@ -43,6 +44,7 @@ class SendMessage(object):
               'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
               'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
               'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
+              'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
               'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
               'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
               'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
@@ -53,7 +55,7 @@ class SendMessage(object):
     # 消息模板id
     TEMPLATE_ID = 'i--KZsfRnhuLqKclGnAJoSyfrFlPwxAa1wyksPBAwF0'
     # 点击跳转链接（可无）
-    CLICK_URL = ' '
+    CLICK_URL = 'https://m.baidu.com/sf?pd=life_compare_weather&openapi=1&dspName=iphone&from_sf=1&resource_id=4495&word=%E5%85%A8%E5%9B%BD%E5%A4%A9%E6%B0%94&title=%E7%9C%81%E5%B8%82%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2&srcid=4983&fromSite=pc'
     len(TOUSER)
     # for n in range (0,len(TOUSER)):
     # print(TOUSER[send_message.a])
