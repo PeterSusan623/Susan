@@ -64,6 +64,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
           'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
+          'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
           'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
           'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
@@ -194,6 +195,8 @@ class Main(object):
             city_code = '101090501'   #唐山
         if a == 7:    #彝族姑娘所在的城市
             city_code = '101270201'   #攀枝花
+        if a == 8:   #孙莉所在的城市
+            city_code = '101271501'   #眉山
         tqurl = api + city_code
         response = requests.get(tqurl)
         d = response.json()  # 将数据以json形式返回，这个d就是返回的json数据
