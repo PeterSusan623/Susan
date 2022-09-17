@@ -65,6 +65,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
           'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
           'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
+          'o-kLm6DiU7LLDa53mnWzD6WaOVVk',     #蒋老板   9
           'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
           'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
@@ -179,7 +180,8 @@ class Main(object):
                '我宁愿犯错，也不愿意什么也不做。',
                '真正的大师永远怀着一个学徒的心。',
                '大丈夫生于天地间,岂能郁郁久居人下。',
-               '即使是一无所有的人也会为自己所珍惜的一切而献出生命。']
+               '即使是一无所有的人也会为自己所珍惜的一切而献出生命。',
+               '吾所成之事，不可逆也。无知者，在劫难逃。']
         # print(len(qgy))
         sm = SendMessage(touser=TOUSER[a])
         # print(time.strftime('%H-%M-%S',time.localtime(time.time())))
@@ -197,6 +199,8 @@ class Main(object):
             city_code = '101270201'   #攀枝花
         if a == 8:   #孙莉所在的城市
             city_code = '101271501'   #眉山
+        if a == 9:   #蒋老板所在的城市
+            citoy_code = '101280101'  #广州
         tqurl = api + city_code
         response = requests.get(tqurl)
         d = response.json()  # 将数据以json形式返回，这个d就是返回的json数据
