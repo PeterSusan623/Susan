@@ -200,7 +200,7 @@ class Main(object):
         if a == 8:   #孙莉所在的城市
             city_code = '101271501'   #眉山
         if a == 9:   #蒋老板所在的城市
-            citoy_code = '101280101'  #广州
+            city_code = '101280101'   #广州
         tqurl = api + city_code
         response = requests.get(tqurl)
         d = response.json()  # 将数据以json形式返回，这个d就是返回的json数据
