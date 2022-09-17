@@ -11,7 +11,7 @@ on:
   schedule:
     - cron: '0 23 * * *'
     - cron: '23 4 * * *'
-    - cron: '0 10 * * *'
+    - cron: '0 10 * * *'，
 
 
 permissions:
