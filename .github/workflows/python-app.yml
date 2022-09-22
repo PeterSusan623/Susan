@@ -10,7 +10,7 @@ on:
    # branches: [ "main" ]
   schedule:
     - cron: '0 23 * * *'
-    - cron: '23 3 * * *'，
+    - cron: '23 3 * * *'
     - cron: '0 10 * * *'
 
 
