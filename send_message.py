@@ -19,7 +19,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
           'o-kLm6AW-Q9V9wHFiZjBmH2E0koM',     #安儿子
           'o-kLm6NW13Og_V3fxfCqFWlEQDOo',     #锦城小黄  3
-          'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平     
+          'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
           'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
@@ -33,7 +33,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6CmTKNl0otcTCm_AMM2ok_c',     #卓桑
           'o-kLm6Njl_v4tfFci1aa-8ADO0qQ',     #komorebi
           'o-kLm6OCrDQjWaWcDwf32-JXDal0',     #测试
-          'o-kLm6OySXaJHztFPHmzMb9uobE4']     #peter     
+          'o-kLm6OySXaJHztFPHmzMb9uobE4']     #peter
 
 a = 0
 a = 0
@@ -49,7 +49,7 @@ class SendMessage(object):
               'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
               'o-kLm6AW-Q9V9wHFiZjBmH2E0koM',     #安儿子
               'o-kLm6NW13Og_V3fxfCqFWlEQDOo',     #锦城小黄  3
-              'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平     
+              'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平
               'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
               'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
               'o-kLm6MqCc-UPRjYGpEvk_tZMcOo',     #彝族姑娘  7
@@ -250,19 +250,14 @@ class SendMessage(object):
         """
         发送消息
         :param json_data: json数据
-         :return:
+        :return:
          """
-         # 模板消息请求地址
-         url = f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={self.access_token}"
-         data = json.dumps(self.get_send_datass(json_datas))
-         resp = requests.post(url, data=data)
-         result = resp.json()
-         if result["errcode"] == 0:
-             print("消息发送成功")
-         else:
-             print(result)
-
-
-
-
-        
+        # 模板消息请求地址
+        url = f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={self.access_token}"
+        data = json.dumps(self.get_send_datass(json_datas))
+        resp = requests.post(url, data=data)
+        result = resp.json()
+        if result["errcode"] == 0:
+            print("消息发送成功")
+        else:
+            print(result)
