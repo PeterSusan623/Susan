@@ -180,6 +180,71 @@ class SendMessage(object):
         if result["errcode"] == 0:
             print("消息发送成功")
             send_message.a = send_message.a + 1
+            send_message.cg = send_message.cg + 1
+            if send_message.a == len(TOUSER) - 1:
+                print("11111111111")
+                send_message.s = send_message.s + 1
+        else:
+
+           print(result)
+           print("消息发生失败")
+           lb.append(TOUSER[send_message.a])
+           send_message.a = send_message.a + 1
+           send_message.sb = send_message.sb + 1
+           if send_message.a == len(TOUSER) - 1:
+               print("11111111111")
+               send_message.s = send_message.s + 1
+        return send_message.a,send_message.s,send_message.sb,send_message.cg,lb
+
+
+
+
+
+        def get_send_datass(self, json_datas) -> object:
+        """
+        获取发送消息data
+        :param json_data: json数据对应模板
+        :return: 发送的消息体
+        """
+        return {
+            "touser": self.touser,
+            "template_id": self.template_id,
+            "url": 'https://github.com/PeterSusan623/Susan',
+            "topcolor": "#FF0000",
+            # json数据对应模板
+            "data": {
+                "peter": {
+                    "value": json_datas["peter"],
+                    # 字体颜色
+                    "color": "#FF0000"
+                },
+                "all": {
+                    "value": json_datas["all"],
+                    "color": "#0000FF"
+                },
+                "cg": {
+                    "value": json_datas["cg"],
+                    "color": "#FF00FF"
+                },
+                "sb": {
+                    "value": json_datas["sb"],
+                    "color": "#8B008B"
+                },
+            }
+        }
+
+    def send_messagess(self, json_datas) -> None:
+        """
+        发送消息
+        :param json_data: json数据
+        :return:
+        """
+        # 模板消息请求地址
+        url = f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={self.access_token}"
+        data = json.dumps(self.get_send_datass(json_datas))
+        resp = requests.post(url, data=data)
+        result = resp.json()
+        if result["errcode"] == 0:
+            print("消息发送成功")
         else:
            print(result)
-        return send_message.a
