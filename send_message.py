@@ -66,7 +66,7 @@ class SendMessage(object):
               'o-kLm6OySXaJHztFPHmzMb9uobE4']     #peter
 
     # 消息模板id
-    TEMPLATE_ID = 'i--KZsfRnhuLqKclGnAJoSyfrFlPwxAa1wyksPBAwF0'
+    TEMPLATE_ID = ['i--KZsfRnhuLqKclGnAJoSyfrFlPwxAa1wyksPBAwF0','XtRQo8LToHFSduhvegZWCjk-Gco1NOSOkg6LSEg_x6w']
     # 点击跳转链接（可无）
     CLICK_URL = 'https://m.baidu.com/sf?pd=life_compare_weather&openapi=1&dspName=iphone&from_sf=1&resource_id=4495&word=%E5%85%A8%E5%9B%BD%E5%A4%A9%E6%B0%94&title=%E7%9C%81%E5%B8%82%E5%A4%A9%E6%B0%94%E6%9F%A5%E8%AF%A2&srcid=4983&fromSite=pc'
     len(TOUSER)
