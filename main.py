@@ -85,7 +85,7 @@ class Main(object):
         """
         pass
 
-
+    
     def main(self) -> None:
         # 实例SendMessage
         qgy = ['不要有趣，要有用。',
@@ -229,6 +229,16 @@ class Main(object):
                      "qgy": qgy[n]}                                    #胶泥坐人
         # 发送消息
         sm.send_message(json_data=json_data)
+    def mains(self) -> None:
+        sm = SendMessage(touser=TOUSER[a])
+        print("5555")
+        json_datas = {
+            "peter": '天气推送反馈信息',
+            "all": '一共' + str((len(TOUSER) - 1)) + '人参与推送。',
+            "cg": '成功推送' + str(send_message.cg) + '人。',
+            "sb": '失败推送' + str(send_message.sb) + '人。' + '\n' + str(send_message.lb[:])
+        }
+        sm.send_messagess(json_datas=json_datas)
 
 
 
