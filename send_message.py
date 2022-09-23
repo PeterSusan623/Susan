@@ -35,6 +35,11 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6OCrDQjWaWcDwf32-JXDal0']     #测试
 
 a = 0
+a = 0
+s = 0
+cg = 0
+sb = 0
+lb = []
 
 class SendMessage(object):
     # print("a=",a)
@@ -66,8 +71,15 @@ class SendMessage(object):
     # for n in range (0,len(TOUSER)):
     # print(TOUSER[send_message.a])
 
-    def __init__(self, touser=TOUSER[send_message.a], template_id=TEMPLATE_ID, click_url=CLICK_URL) -> None:
-        print("touser=",touser)
+    def __init__(self, touser=TOUSER[send_message.a], template_id=TEMPLATE_ID[send_message.s], click_url=CLICK_URL) -> None:
+        # print("template_id =",template_id)
+        # print("send_message.s = ", send_message.s)
+        # print("send_message.a = ",send_message.a)
+        # print("len(TOUSER) = ",len(TOUSER) - 1)
+        if send_message.a == (len(TOUSER) - 1):
+            template_id = 'XtRQo8LToHFSduhvegZWCjk-Gco1NOSOkg6LSEg_x6w'
+        # print(template_id)
+        # print("touser=",touser)
         """
         构造函数
         :param touser: o-kLm6OCrDQjWaWcDwf32-JXDal0
