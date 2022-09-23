@@ -232,7 +232,7 @@ class Main(object):
         sm.send_message(json_data=json_data)
     def mains(self) -> None:
         sm = SendMessage(touser=TOUSER[a])
-        print("5555")
+        # print("5555")
         json_datas = {
             "peter": '天气推送反馈信息',
             "all": '一共' + str((len(TOUSER) - 1)) + '人参与推送。',
@@ -248,7 +248,7 @@ if __name__ == '__main__':
     main = Main()
     main.main()
     # access_token.a = access_token.a + 1
-    for a in range(1,len(TOUSER)):
+    for a in range(1,len(TOUSER) -1):
         # print(TOUSER[a])
         main = Main()
         main.main()
