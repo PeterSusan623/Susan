@@ -213,8 +213,7 @@ class SendMessage(object):
 
 
 
-
-        def get_send_datass(self, json_datas) -> object:
+    def get_send_datass(self, json_datas) -> object:
         """
         获取发送消息data
         :param json_data: json数据对应模板
@@ -247,18 +246,23 @@ class SendMessage(object):
             }
         }
 
-        def send_messagess(self, json_datas) -> None:
-            """
-            发送消息
-            :param json_data: json数据
-            :return:
-            """
-            # 模板消息请求地址
-            url = f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={self.access_token}"
-            data = json.dumps(self.get_send_datass(json_datas))
-            resp = requests.post(url, data=data)
-            result = resp.json()
-            if result["errcode"] == 0:
-                print("消息发送成功")
-            else:
-                print(result)
+    def send_messagess(self, json_datas) -> None:
+        """
+        发送消息
+        :param json_data: json数据
+         :return:
+         """
+         # 模板消息请求地址
+         url = f"https://api.weixin.qq.com/cgi-bin/message/template/send?access_token={self.access_token}"
+         data = json.dumps(self.get_send_datass(json_datas))
+         resp = requests.post(url, data=data)
+         result = resp.json()
+         if result["errcode"] == 0:
+             print("消息发送成功")
+         else:
+             print(result)
+
+
+
+
+        
