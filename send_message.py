@@ -243,7 +243,7 @@ class SendMessage(object):
                 "sb": {
                     "value": json_datas["sb"],
                     "color": "#8B008B"
-                },
+                }
             }
         }
 
