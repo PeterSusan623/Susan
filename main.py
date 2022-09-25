@@ -234,11 +234,15 @@ class Main(object):
     def mains(self) -> None:
         sm = SendMessage(touser=TOUSER[a])
         # print("5555")
+        if send_message.sb == 0:
+            str_ = '失败推送' + str(send_message.sb) + '人。'
+        else:
+            str_ = '失败推送' + str(send_message.sb) + '人。\n' + '推送失败微信号:\n' + str(send_message.lb[:])
         json_datas = {
             "peter": '天气推送反馈信息',
             "all": '一共' + str((len(TOUSER) - 1)) + '人参与推送。',
             "cg": '成功推送' + str(send_message.cg) + '人。',
-            "sb": '失败推送' + str(send_message.sb) + '人。' + '\n' + str(send_message.lb[:])
+            "sb": str_
         }
         sm.send_messagess(json_datas=json_datas)
 
