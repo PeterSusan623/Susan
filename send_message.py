@@ -26,6 +26,7 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
           'o-kLm6DiU7LLDa53mnWzD6WaOVVk',     #蒋老板   9
           'o-kLm6IyW1gKeBHFECLyCVr3K6j4',     #抖音小董 10
+          'o-kLm6AJo0OS9HaJwATA3qL6xFwU',     #python   11    河南信阳 30 1
           'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
           'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
@@ -56,6 +57,7 @@ class SendMessage(object):
               'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
               'o-kLm6DiU7LLDa53mnWzD6WaOVVk',     #蒋老板   9
               'o-kLm6IyW1gKeBHFECLyCVr3K6j4',     #抖音小董 10
+              'o-kLm6AJo0OS9HaJwATA3qL6xFwU',     #python   11    河南信阳 30 1
               'o-kLm6JGIh7b6mrDij1rhtg-7CRw',     #老张
               'o-kLm6Da1B1XcbrufuUWmaL4Zi84',     #香香
               'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
