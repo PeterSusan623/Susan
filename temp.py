@@ -1,9 +1,9 @@
-TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
+TOUSER = [#'o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
           'o-kLm6AW-Q9V9wHFiZjBmH2E0koM',     #安儿子
           'o-kLm6NW13Og_V3fxfCqFWlEQDOo',     #锦城小黄  3
           'o-kLm6EcQ7dYCZ73i5bDfFA8ytGk',     #周金平     
-          'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
+          #'o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #小不点   5
           'o-kLm6JMczPEg622U2NAdXHMX5D8',     #佟颖     6
           'o-kLm6G4MaMuW7kVYgXGKrPMJhf8',     #绿道项目负责人
           'o-kLm6JA7oFY4vKqlPyFZZ8rnHuc',     #孙莉     8
@@ -15,8 +15,8 @@ TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',     #peter
           'o-kLm6GP1jz6rdnz5uDXpxIQD6yo',     #李雨珂
           'o-kLm6CmTKNl0otcTCm_AMM2ok_c',     #卓桑
           'o-kLm6DnNg7uFzRSVdlZHD-2WtUs',     #张楚悦
-          'o-kLm6OCrDQjWaWcDwf32-JXDal0',     #测试
-          'o-kLm6OySXaJHztFPHmzMb9uobE4']     #peter
+          #'o-kLm6OCrDQjWaWcDwf32-JXDal0',     #测试
+          #'o-kLm6OySXaJHztFPHmzMb9uobE4']     #peter
 
 a = 0  #第几个推送的人
 
