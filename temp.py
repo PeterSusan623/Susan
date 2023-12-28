@@ -18,10 +18,10 @@
           'o-kLm6Kbbb1694nlt4nyrzRbOO9I']'''
           #'o-kLm6OCrDQjWaWcDwf32-JXDal0',     #测试
           #'o-kLm6OySXaJHztFPHmzMb9uobE4'     #peter
-
-TOUSER = ['o-kLm6Kbbb1694nlt4nyrzRbOO9I',
+ 
+TOUSER = ['o-kLm6OySXaJHztFPHmzMb9uobE4',
           'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',
-          'o-kLm6Kbbb1694nlt4nyrzRbOO9I']
+          'o-kLm6OySXaJHztFPHmzMb9uobE4']
 
 a = 0  #第几个推送的人
 
