@@ -1,4 +1,4 @@
-TOUSER = ['o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #peter
+'''TOUSER = ['o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #peter
           'o-kLm6KvU4BSuxiKz3tEwszYrSzo',     #潮弟
           'o-kLm6AW-Q9V9wHFiZjBmH2E0koM',     #安儿子
           'o-kLm6NW13Og_V3fxfCqFWlEQDOo',     #锦城小黄  3
@@ -15,9 +15,13 @@ TOUSER = ['o-kLm6Kbbb1694nlt4nyrzRbOO9I',     #peter
           'o-kLm6GP1jz6rdnz5uDXpxIQD6yo',     #李雨珂
           'o-kLm6CmTKNl0otcTCm_AMM2ok_c',     #卓桑
           'o-kLm6DnNg7uFzRSVdlZHD-2WtUs',     #张楚悦
-          'o-kLm6Kbbb1694nlt4nyrzRbOO9I']
+          'o-kLm6Kbbb1694nlt4nyrzRbOO9I']'''
           #'o-kLm6OCrDQjWaWcDwf32-JXDal0',     #测试
           #'o-kLm6OySXaJHztFPHmzMb9uobE4'     #peter
+
+TOUSER = ['o-kLm6Kbbb1694nlt4nyrzRbOO9I',
+          'o-kLm6CNSyEvuWkXIhpBvOEJZM7g',
+          'o-kLm6Kbbb1694nlt4nyrzRbOO9I']
 
 a = 0  #第几个推送的人
 
