@@ -61,7 +61,7 @@ class SendMessage(object):
             "touser": self.touser,
             "template_id": self.template_id,
             "url": self.click_url,
-            "topcolor": "#27B900",
+            "topcolor": "#FF0000",
             # json数据对应模板
             "data": {
                 "city": {
