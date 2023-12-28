@@ -1,0 +1,38 @@
+name: Python applicationss
+
+on:
+  push:
+    branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
+  schedule:
+    - cron: '0 23 * * *'
+    - cron: '23 3 * * *'
+    - cron: '0 10 * * *'
+
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.7
+      uses: actions/setup-python@v3
+      with:
+        python -version: "3.7"
+    - name: Install dependencies
+      run: |
+        python3 -m pip install --upgrade pip
+        pip install requests
+        pip install json5 
+        pip install datetime timedelta
+        #pip install random 
+        #pip install time 
+        #if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+    - name: Test with pytest
+      run: python ./main.py 
