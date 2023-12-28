@@ -61,21 +61,21 @@ class SendMessage(object):
             "touser": self.touser,
             "template_id": self.template_id,
             "url": self.click_url,
-            "topcolor": "#FF0000",
+            "topcolor": "#27B900",
             # json数据对应模板
             "data": {
                 "city": {
                     "value": json_data["city"],
                     # 字体颜色
-                    "color": "#FF0000"
+                    "color": "#27B900"
                 },
                 "data": {
                     "value": json_data["data"],
-                    "color": "#0000FF"
+                    "color": "#27B900"
                 },
                 "time": {
                     "value": json_data["time"],
-                    "color": "#FF00FF"
+                    "color": "#27B900"
                 },
                 "updata_time": {
                     "value": json_data["updata_time"],
